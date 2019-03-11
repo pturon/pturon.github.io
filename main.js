@@ -40,6 +40,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _finish_finish_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./finish/finish.component */ "./src/app/finish/finish.component.ts");
 /* harmony import */ var _new_question_new_question_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./new-question/new-question.component */ "./src/app/new-question/new-question.component.ts");
+/* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./result/result.component */ "./src/app/result/result.component.ts");
+
 
 
 
@@ -52,6 +54,7 @@ var routes = [
     { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"] },
     { path: 'finish', component: _finish_finish_component__WEBPACK_IMPORTED_MODULE_5__["FinishComponent"] },
     { path: 'new', component: _new_question_new_question_component__WEBPACK_IMPORTED_MODULE_6__["NewQuestionComponent"] },
+    { path: 'result', component: _result_result_component__WEBPACK_IMPORTED_MODULE_7__["ResultComponent"] },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -88,7 +91,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\n"
+module.exports = "<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
@@ -148,6 +151,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _finish_finish_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./finish/finish.component */ "./src/app/finish/finish.component.ts");
 /* harmony import */ var _new_question_new_question_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./new-question/new-question.component */ "./src/app/new-question/new-question.component.ts");
+/* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./result/result.component */ "./src/app/result/result.component.ts");
+
 
 
 
@@ -178,7 +183,8 @@ var AppModule = /** @class */ (function () {
                 _questions_questions_component__WEBPACK_IMPORTED_MODULE_5__["QuestionsComponent"],
                 _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
                 _finish_finish_component__WEBPACK_IMPORTED_MODULE_10__["FinishComponent"],
-                _new_question_new_question_component__WEBPACK_IMPORTED_MODULE_11__["NewQuestionComponent"]
+                _new_question_new_question_component__WEBPACK_IMPORTED_MODULE_11__["NewQuestionComponent"],
+                _result_result_component__WEBPACK_IMPORTED_MODULE_12__["ResultComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -216,7 +222,7 @@ module.exports = ".container-fluid {\r\n  height: 100%;\r\n  background-color: w
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n  <div class=\"col\">\n    <div class=\"row justify-content-center\" id=\"heading\">\n      <h1>Die Umfrage ist abgeschlossen</h1>\n    </div>\n    <div class=\"row justify-content-center\" id=\"underheading\">\n      <h4>Danke, dass sie teilgenommen haben.</h4>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container-fluid\">\r\n  <div class=\"col\">\r\n    <div class=\"row justify-content-center\" id=\"heading\">\r\n      <h1>Die Umfrage ist abgeschlossen</h1>\r\n    </div>\r\n    <div class=\"row justify-content-center\" id=\"underheading\">\r\n      <h4>Danke, dass sie teilgenommen haben.</h4>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -272,7 +278,7 @@ module.exports = ".container-fluid {\r\n  height: 100%;\r\n  background-color: w
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n  <div class=\"col\">\n    <div class=\"row justify-content-center\" id=\"heading\">\n      <h1>Umfragentitel</h1>\n    </div>\n    <div class=\"row justify-content-center\" id=\"underheading\">\n      <h4>Umfragentitel</h4>\n    </div>\n    <div class=\"row justify-content-center\" id=\"button\">\n      <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/questions\">Umfrage Starten</button>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container-fluid\">\r\n  <div class=\"col\">\r\n    <div class=\"row justify-content-center\" id=\"heading\">\r\n      <h1>Umfragentitel</h1>\r\n    </div>\r\n    <div class=\"row justify-content-center\" id=\"underheading\">\r\n      <h4>Umfragentitel</h4>\r\n    </div>\r\n    <div class=\"row justify-content-center\" id=\"button\">\r\n      <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/questions\">Umfrage Starten</button>\r\n    </div>\r\n  </div>\r\n  <div class=\"row fixed-bottom\">\r\n    <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/new\" style=\"margin: 5px\">Neue Frage</button>\r\n    <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/result\" style=\"margin: 5px\">Ergebnisse</button>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -328,7 +334,7 @@ module.exports = ".container-fluid {\r\n  height: 100%;\r\n  background-color: w
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n\n  <div class=\"row justify-content-center\">\n\n    <div class=\"col-md-6\">\n\n      <div class=\"row justify-content-center\" id=\"heading\">\n        <h1>Frage Hinzufügen</h1>\n      </div>\n\n      <div class=\"row justify-content-center\">\n        <select [(ngModel)]=\"type\">\n          <option value=\"frage\">frage</option>\n        </select>\n      </div>\n\n      <div class=\"row justify-content-center\">\n        <input type=\"string\" [(ngModel)]=\"question\" name=\"question\" placeholder=\"Frage...\">\n      </div>\n\n      <div class=\"row justify-content-center\">\n\n        <input type=\"text\" [(ngModel)]=\"color\" placeholder=\"Farbe...\">\n\n      </div>\n\n      <div class=\"row justify-content-center\">\n        <button class=\"btn btn-primary\" (click)=\"addColor()\">Farbe hinzufügen</button>\n      </div>\n\n      <div class=\"row color-row\" *ngFor=\"let c of colors\">\n        <div class=\"color\" [ngStyle]=\"{'backgroundColor': c}\"></div>\n      </div>\n\n      <div class=\"row justify-content-center\">\n        <button class=\"btn btn-primary\" (click)=\"uploadQuestion()\">Hinzufügen</button>\n      </div>\n\n    </div>\n\n  </div>\n</div>\n\n\n"
+module.exports = "<div class=\"container-fluid\">\r\n\r\n  <div class=\"row justify-content-center\">\r\n\r\n    <div class=\"col-md-6\">\r\n\r\n      <div class=\"row justify-content-center\" id=\"heading\">\r\n        <h1>Frage Hinzufügen</h1>\r\n      </div>\r\n\r\n      <div class=\"row justify-content-center\">\r\n        <select [(ngModel)]=\"type\">\r\n          <option value=\"frage\">frage</option>\r\n        </select>\r\n      </div>\r\n\r\n      <div class=\"row justify-content-center\">\r\n        <input type=\"string\" [(ngModel)]=\"question\" name=\"question\" placeholder=\"Frage...\">\r\n      </div>\r\n\r\n      <div class=\"row justify-content-center\">\r\n\r\n        <input type=\"text\" [(ngModel)]=\"color\" placeholder=\"Farbe...\">\r\n\r\n      </div>\r\n\r\n      <div class=\"row justify-content-center\">\r\n        <button class=\"btn btn-primary\" (click)=\"addColor()\">Farbe hinzufügen</button>\r\n      </div>\r\n\r\n      <div class=\"row color-row\" *ngFor=\"let c of colors\">\r\n        <div class=\"color\" [ngStyle]=\"{'backgroundColor': c}\"></div>\r\n      </div>\r\n\r\n      <div class=\"row justify-content-center\">\r\n        <button class=\"btn btn-primary\" (click)=\"uploadQuestion()\">Hinzufügen</button>\r\n      </div>\r\n\r\n      <div class=\"row justify-content-center\">\r\n        <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/home\">Zurück</button>\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -401,7 +407,7 @@ module.exports = ".container-fluid {\r\n  height: 100%;\r\n  background-color: w
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n  <div *ngIf=\"current==0\">\n    <div class=\"row justify-content-center\">\n      <h1>Geschlecht auswählen</h1>\n    </div>\n    <div class=\"row justify-content-center\">\n      <button (click)=\"onButton('m')\">Männlich</button>\n      <button (click)=\"onButton('f')\">Weiblich</button>\n      <button (click)=\"onButton('d')\">Divers</button>\n    </div>\n  </div>\n  <div *ngFor=\"let q of questions | async; let i = index\">\n    <div *ngIf=\"i == current && current > 0\">\n      <div class=\"row justify-content-center\">\n        <h4>Anleitung</h4>\n      </div>\n      <div class=\"row justify-content-center\">\n        <h1>{{q.question}}</h1>\n      </div>\n      <div class=\"row justify-content-center\">\n        <div>\n          <audio controls>\n            <source src=\"{{q.music}}\" type=\"audio/mpeg\">\n            Your browser does not support the audio element.\n          </audio>\n        </div>\n      </div>\n      <div class=\"row justify-content-center\">\n        <div *ngFor=\"let c of q.colors\">\n          <button class=\"color-button\" [ngStyle]=\"{'backgroundColor': c}\" (click)=\"onButton(c)\"></button>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n"
+module.exports = "<div class=\"container-fluid\">\r\n  <div *ngIf=\"current==0\">\r\n    <div class=\"row justify-content-center\">\r\n      <h1>Geschlecht auswählen</h1>\r\n    </div>\r\n    <div class=\"row justify-content-center\">\r\n      <button (click)=\"onButton('m')\">Männlich</button>\r\n      <button (click)=\"onButton('f')\">Weiblich</button>\r\n      <button (click)=\"onButton('d')\">Divers</button>\r\n    </div>\r\n  </div>\r\n  <div *ngFor=\"let q of questions | async; let i = index\">\r\n    <div *ngIf=\"i == current && current > 0\">\r\n      <div class=\"row justify-content-center\">\r\n        <h4>Anleitung</h4>\r\n      </div>\r\n      <div class=\"row justify-content-center\">\r\n        <h1>{{q.question}}</h1>\r\n      </div>\r\n      <div class=\"row justify-content-center\">\r\n        <div>\r\n          <audio controls>\r\n            <source src=\"{{q.music}}\" type=\"audio/mpeg\">\r\n            Your browser does not support the audio element.\r\n          </audio>\r\n        </div>\r\n      </div>\r\n      <div class=\"row justify-content-center\">\r\n        <div *ngFor=\"let c of q.colors\">\r\n          <button class=\"color-button\" [ngStyle]=\"{'backgroundColor': c}\" (click)=\"onButton(c)\"></button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -460,6 +466,84 @@ var QuestionsComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], angularfire2_firestore__WEBPACK_IMPORTED_MODULE_3__["AngularFirestore"]])
     ], QuestionsComponent);
     return QuestionsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/result/result.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/result/result.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Jlc3VsdC9yZXN1bHQuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/result/result.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/result/result.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<button type=\"button\" class=\"btn btn-primary\" routerLink=\"/home\">Zurück</button>\n<table>\n  <tr *ngFor=\"let a of answers | async\">\n    <td *ngFor=\"let c of a.answers\">\n      {{c}}\n    </td>\n  </tr>\n</table>\n"
+
+/***/ }),
+
+/***/ "./src/app/result/result.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/result/result.component.ts ***!
+  \********************************************/
+/*! exports provided: ResultComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResultComponent", function() { return ResultComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var angularfire2_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! angularfire2/firestore */ "./node_modules/angularfire2/firestore/index.js");
+/* harmony import */ var angularfire2_firestore__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(angularfire2_firestore__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+var ResultComponent = /** @class */ (function () {
+    function ResultComponent(afs) {
+        this.afs = afs;
+    }
+    ResultComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.answerCols = this.afs.collection('Answers');
+        this.answers = this.answerCols.valueChanges();
+        this.answers.subscribe(function (val) { return _this.saveToCSV(val); });
+    };
+    ResultComponent.prototype.saveToCSV = function (data) {
+        var replacer = function (key, value) { return value === null ? '' : value; };
+        var header = Object.keys(data[0]);
+        var csv = data.map(function (row) { return header.map(function (fieldName) { return JSON.stringify(row[fieldName], replacer); }).join(','); });
+        csv.unshift(header.join(','));
+        var csvArray = csv.join('\r\n');
+        var a = document.createElement('a');
+        var blob = new Blob([csvArray], { type: 'text/csv' }), url = window.URL.createObjectURL(blob);
+        a.href = url;
+        a.download = "result.csv";
+        a.click();
+        window.URL.revokeObjectURL(url);
+        a.remove();
+    };
+    ResultComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-result',
+            template: __webpack_require__(/*! ./result.component.html */ "./src/app/result/result.component.html"),
+            styles: [__webpack_require__(/*! ./result.component.css */ "./src/app/result/result.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [angularfire2_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"]])
+    ], ResultComponent);
+    return ResultComponent;
 }());
 
 
